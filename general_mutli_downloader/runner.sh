@@ -7,7 +7,6 @@ continue(){
     while IFS= read -r link
     do
         wget -c "${link}"
-        #echo "${link}"
         echo "${link}" >> done.log
         sed -i '1d' continuefile
         clear
