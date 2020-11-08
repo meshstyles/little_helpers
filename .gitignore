@@ -127,5 +127,5 @@ dist
 .pnp.*
 
 #testing places
-.testing/
-.testingground/
+testing/
+testingground/
