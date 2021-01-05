@@ -1,0 +1,106 @@
+{
+    "de": {
+        "adj": {
+            "loc": [
+                "groß",
+                "klein",
+                "bitter",
+                "frisch",
+                "salzig",
+                "sauere",
+                "scharfe",
+                "süß"
+            ],
+            "eng": [
+                "big",
+                "small",
+                "bitter",
+                "fresh",
+                "salty",
+                "sour",
+                "spicy",
+                "sweet"
+            ]
+        },
+        "noun": {
+            "loc": [
+                "Essen",
+                "Brot",
+                "Käse",
+                "Fleisch",
+                "Hähnchen",
+                "Fisch",
+                "Sandwich",
+                "Salat",
+                "Süßigkeit",
+                "Frucht",
+                "Apfel"
+            ],
+            "eng": [
+                "food",
+                "bread",
+                "cheese",
+                "meat",
+                "chicken",
+                "fish",
+                "sandwich",
+                "salad",
+                "candy",
+                "fruit",
+                "apple"
+            ]
+        }
+    },
+    "cn": {
+        "adj": {
+            "loc": [
+                "dà",
+                "xiǎo",
+                "kǔ",
+                "dàn",
+                "xiān",
+                "suān",
+                "là",
+                "tián"
+            ],
+            "eng": [
+                "big",
+                "small",
+                "bitter",
+                "fresh",
+                "salty",
+                "sour",
+                "spicy",
+                "sweet"
+            ]
+        },
+        "noun": {
+            "loc": [
+                "shí pǐn",
+                "miàn bāo",
+                "nǎi lào",
+                "ròu",
+                "jī ròu",
+                "yú ròu",
+                "sān míng zhì",
+                "shā lā",
+                "táng guǒ",
+                "shuǐ guǒ",
+                "píng guǒ"
+            ],
+            "eng": [
+                "food",
+                "bread",
+                "cheese",
+                "meat",
+                "chicken",
+                "fish",
+                "sandwich",
+                "salad",
+                "candy",
+                "fruit",
+                "apple"
+            ]
+        }
+    }
+}
