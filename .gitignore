@@ -129,3 +129,6 @@ dist
 #testing places
 testing/
 testingground/
+
+settings.json
+qrcode.png
