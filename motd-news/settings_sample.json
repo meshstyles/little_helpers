@@ -1,0 +1,6 @@
+{
+    "tageschaulength":3,
+    "weatherapi":"the key goes here",
+    "weatherLoc":"Vancouver, British Columbia, Canada",
+    "comment": "please fill these out and rename the file to settings.json"
+}
