@@ -26,7 +26,7 @@
     "replace pattern": {
         "prefix": "replace",
         "body": [
-            "sed"
+            "sed s/${1:patternToReplace}/${2:patternWhichReplaces/g"
         ],
         "description": "replace everything matching the pattern"
     },
