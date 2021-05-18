@@ -32,6 +32,5 @@ echo looper
 [[ video_links -eq "filled" ]] && file_variable="${listFile}"
    while IFS= read -r link
        do
-           #youtube-dl $link
-           echo $link
+           youtube-dl $link
 done <"$file_variable"
