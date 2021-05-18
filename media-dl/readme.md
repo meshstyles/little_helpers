@@ -11,4 +11,4 @@ This shellscript is supposed to make usage of Youtube-DL easier and more efficie
 - tubitv *
 
 
-* partially so just the default selected season will be downloaded
+\* partially so just the default selected season will be downloaded
