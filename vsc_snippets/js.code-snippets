@@ -21,21 +21,22 @@
         ],
         "description": "for loop with i variable (OLD C99 HABIT)"
     },
-    
-    "init":{
-        "prefix":"init",
-        "body":[ 
+    "init": {
+        "prefix": "init",
+        "body": [
             "async function ${1:function_name}(${2:params}){",
-            "    ${3:code}",
+            "   ${3:code}",
             "}",
             "",
             "module.exports.${1:function_name} = ${1:function_name};"
         ],
         "description": "init for \"module\" code"
     },
-    "destructure":{
+    "destructure": {
         "prefix": "destructure",
-        "body":["const {${1:variable}} = ${2:object};"],
+        "body": [
+            "const {${1:variable}} = ${2:object};"
+        ],
         "description": "destructure object"
     }
 }

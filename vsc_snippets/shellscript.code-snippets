@@ -16,10 +16,10 @@
         "prefix": "loop",
         "body": [
             "${1:file_variable}=\"./${2:file_name}\"",
-            "    while IFS= read -r ${3:line_variable}",
+            "   while IFS= read -r ${3:line_variable}",
             "       do",
             "           ${4:code}",
-            "done<\"$${1:file_variable}\""
+            "done <\"$${1:file_variable}\""
         ],
         "description": "loop though a file"
     },
