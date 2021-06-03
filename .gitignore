@@ -1,11 +1,11 @@
-*.html
-*.doc
-*.docx
-*.pdf
-*.out
-*.zip
-*.tar
-*.tar.gz
+yt-feed/*.html
+yt-feed/*.doc
+yt-feed/*.docx
+yt-feed/*.pdf
+yt-feed/*.out
+yt-feed/*.zip
+yt-feed/*.tar
+yt-feed/*.tar.gz
 
 
 
