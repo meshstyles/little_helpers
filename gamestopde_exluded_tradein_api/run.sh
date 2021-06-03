@@ -1,6 +1,6 @@
 #!/bin/bash
 
-targetfilefinal="/var/www/html/api/excluded.json"
+targetfilefinal="/var/www/html/api/tradein/excluded.json"
 targetfile="/tmp/jsonfinal"
 tmpfilename="/tmp/jsonlitelist"
 

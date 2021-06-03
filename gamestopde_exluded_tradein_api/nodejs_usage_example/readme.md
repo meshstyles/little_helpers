@@ -1,0 +1,1 @@
+This is a simple example on how you can use this "api" if you for example have it hosted on an raspi with apache
