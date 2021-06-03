@@ -16,3 +16,4 @@ this is a bash based method of getting an api in form of a served json file for 
 - just run the script no prameters have to be set.
 - adjust "targetfilefinal" to the directory where the file will be served from
 - probaly best to run this script per cron like every week (they don't change it that often)
+- consoles.txt needs to be in the same directory as the script is runing in (ie if the script is in ~/scripts and you run it from ~/ the file needs to be in ~/)
