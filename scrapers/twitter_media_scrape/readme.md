@@ -14,3 +14,12 @@ run it like this
 
 # possibly will be fixed
 automatically gauge the page count
+
+
+# additional tools
+
+## archiveTraverse.sh
+looks for failed image urls if they are on archive org way back mashine, downloads the latest available if available
+### usage
+create url.list with urls (has to be unix format file)
+run like ```./archiveTraverser.sh```
