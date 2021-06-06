@@ -7,8 +7,6 @@ yt-feed/*.zip
 yt-feed/*.tar
 yt-feed/*.tar.gz
 
-
-
 # Logs
 logs
 *.log
@@ -132,3 +130,8 @@ testingground/
 
 settings.json
 qrcode.png
+
+*.crx
+*.pem
+*.key
+*.rsa
