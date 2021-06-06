@@ -9,7 +9,7 @@ document.addEventListener(
             function (selection) {
                 let code = document.getElementById("code");
                 //this auto-decodes for convience because less clicks more better
-                let decoded = decode(selection.trim());
+                let decoded = decode(selection);
                 code.value = decoded;
                 // if (selection === null || selection === undefined) {
                 //     decoded = "";
