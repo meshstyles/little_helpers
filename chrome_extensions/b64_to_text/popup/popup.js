@@ -8,16 +8,16 @@ document.addEventListener(
             },
             function (selection) {
                 let code = document.getElementById("code");
-                //this auto-decodes for convience because less clicks more better
-                let decoded = decode(selection);
-                code.value = decoded;
-                // if (selection === null || selection === undefined) {
-                //     decoded = "";
-                //     code.value = decoded;
-                // } else {
-                // let decoded = decode(selection[0].trim())
-                // code.value = decoded;
-                // }
+                // if (!(selection === null || selection === undefined)) {
+                if (selection[0]) {
+                    chrome.runtime.sendMessage('', {
+                        type: 'err-log', selection
+                    });
+                    console.log(selection);
+                    code.value = decode(selection);
+                } else {
+                    code.value = "";
+                }
             }
         );
 
@@ -36,8 +36,6 @@ document.addEventListener(
         newTabButton.addEventListener("click", function (e) {
             let code = document.getElementById("code");
             let url = code.value;
-            if (url === undefined || url === null || url.trim() === "")
-                return;
             // because people forget https at the begining of links
             // and chrome needs that when opening a new tab from extension
             // the user needs to see if it's a valid url
@@ -86,6 +84,7 @@ function decode(encoded) {
     let decoded = encoded;
     let needsDecoding = true;
     //tries decoding til it fails because it's not valid b64
+
     while (needsDecoding) {
         try {
             //
