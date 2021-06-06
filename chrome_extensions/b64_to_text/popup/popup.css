@@ -42,16 +42,12 @@ hr.solid {
     border-top: 3px;
     margin: 2px;
 }
-button {
+button#checkPage {
     width: 98%;
     min-height: fit-content;
     padding: 1%;
     display: block;
     margin: auto;
-}
-ol,
-ul {
-    list-style: none;
 }
 textarea {
     resize: none;
@@ -63,4 +59,22 @@ textarea {
     justify-content: center;
     display: block;
     margin: auto;
+}
+button.actions {
+    width: 48%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border: 0px;
+}
+button#openTab {
+    margin-right: 0.5%;
+}
+button#copy {
+    margin-left: 0.5%;
+}
+div.buttons {
+    width: 100%;
+    margin: 1%;
 }
