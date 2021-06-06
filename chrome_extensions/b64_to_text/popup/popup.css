@@ -1,0 +1,66 @@
+body {
+    height: max-content + 1%;
+    width: 350px;
+    font-family: -apple-system, BlinkMacSystemFont, "Arial", Roboto, Helvetica,
+        Arial, sans-serif;
+    padding: 0;
+    text-decoration-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #464646;
+    overflow-x: hidden;
+}
+div {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.title_nav {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    width: 100%;
+    background: #2d2d2d;
+    height: fit-content;
+}
+h1.title_header {
+    color: #f0f0f0;
+    margin: 0%;
+    height: max-content;
+    font-weight: lighter;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Solid border */
+hr.solid {
+    opacity: 0%;
+    border-top: 3px;
+    margin: 2px;
+}
+button {
+    width: 98%;
+    min-height: fit-content;
+    padding: 1%;
+    display: block;
+    margin: auto;
+}
+ol,
+ul {
+    list-style: none;
+}
+textarea {
+    resize: none;
+    width: 98%;
+    height: 250px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    justify-content: center;
+    display: block;
+    margin: auto;
+}

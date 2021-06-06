@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "b64 to text",
+    "version": "1.0",
+    "description": "transform b64 to text",
+    "browser_action": {
+        "default_icon": "icon-32.png",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "128": "icon-128.png",
+        "64": "icon-64.png",
+        "32": "icon-32.png",
+        "16": "icon-16.png"
+    }
+}
