@@ -21,6 +21,15 @@ if [[ "${1}" =~ ^(https:\/\/www.tubitv.com\/series\/|https:\/\/tubitv.com\/serie
     video_links="filled"
 fi
 
+if [[ "${1}" =~ ^(https:\/\/www.netzkino.de|https:\/\/netzkino.de) ]];then
+    
+    url=$(echo "${1}" | sed 's/https:\/\/www.netzkino.de\/\\#\\!\/filme\///' | sed 's/\///')
+    echo "$url yay"
+    urlp2=$(curl "https://api.netzkino.de.simplecache.net/capi-2.0a/movies/${url}" | jq -r '.custom_fields.Streaming[0]')
+    wget -c "https://pmd.netzkino-seite.netzkino.de/$urlp2.mp4"
+    exit 1;
+fi 
+
 # if [["${1}" =~ ^(https:\/\/www.joyn.de\/serien\/|https:\/\/joyn.de\/serien\/)]]; then
 #     echo "Attention this will only download the preselected season since this pup is non interactive with websites"
 #     curl "${1}" | pup 'div.fcxvn8-6 div div a attr{href}' | grep "serien" | sed 's|/serien/|https://www.joyn.de/serien/|g'
