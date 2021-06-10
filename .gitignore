@@ -1,7 +1,6 @@
 yt-feed/*.html
 yt-feed/*.doc
 yt-feed/*.docx
-yt-feed/*.pdf
 yt-feed/*.out
 yt-feed/*.zip
 yt-feed/*.tar
@@ -135,3 +134,5 @@ qrcode.png
 *.pem
 *.key
 *.rsa
+*.pdf
+*.crt
