@@ -9,8 +9,10 @@ This shellscript is supposed to make usage of Youtube-DL easier and more efficie
 ## Supported Platforms
 - 9now
 - tubitv *
+- netzkino **
 
-\* partially so just the default selected season will be downloaded
+\* partially so just the default selected season will be downloaded  
+\*\* the #! must be escaped as \#\! or bash will interprete these! Also the script will download direct from this site and it won't output a link list
 
 ## How to use
 
