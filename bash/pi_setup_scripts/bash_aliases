@@ -1,0 +1,26 @@
+# common ls aliases
+alias l='ls -la'
+alias la='ls -la'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+
+# cd up
+alias cd..="cd .."
+alias cd.="cd .."
+alias cdh="cd ~"
+alias cdw="cd /var/www/html/"
+
+# gohttp
+alias gohttp='cd /var/www/html'
+alias web='git instaweb --httpd apache2'
+
+# usb
+alias usb='sudo mount /dev/sda1 /var/www/html/usb/'
+alias http='usb; systemctl start apache2.service'
+alias stophttp='systemctl stop apache2.service'
+alias httpstop='systemctl stop apache2.service'
+
+# yt-dl
+alias dl='screen -d -m ytdl'
+alias sget='screen -d -m wget -c '
+alias get='lolvar=$(cat link.url); wget -c $lolvar'
