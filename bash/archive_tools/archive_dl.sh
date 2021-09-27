@@ -2,7 +2,15 @@
 
 link=$1
 
-archive_id=$(echo "${link#*archive.org/details/}" | cut -d '/' -f 1)
+# split links if details or dl and error if link is unfamiliar
+if [[ "$link" == *"archive.org/details/"* ]] ; then
+    archive_id=$(echo "${link#*archive.org/details/}" | cut -d '/' -f 1)
+elif [[ "$link" == *"archive.org/download/"* ]] ; then
+    archive_id=$(echo "${link#*archive.org/download/}" | cut -d '/' -f 1)
+else
+    echo "the link \"${link}\" is currently not supported please open an issue on https://github.com/meshstyles/little_helpers/tree/master/bash/archive_tools"
+    exit 1
+fi
 
 archive_api=$(wget "https://archive.org/details/${archive_id}&output=json" -q -O - )
 
