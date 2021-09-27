@@ -16,6 +16,10 @@ archive_api=$(wget "https://archive.org/details/${archive_id}&output=json" -q -O
 
 archive_itemsr=$(echo $archive_api | jq -r '.files | keys' | jq -c -r '.[]' | grep -v -- "/${archive_id}_files.xml" | grep -v -- "/${archive_id}_archive.torrent" | grep -v -- "/${archive_id}_meta.sqlite" | grep -v -- "/${archive_id}_meta.xml" | grep -v -- "/${archive_id}_reviews.xml")
 
+#make dir for archive listing in order to not accidentally mess up a home directory
+mkdir "$archive_id"
+cd "$archive_id"
+
 #preserver ifs
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
