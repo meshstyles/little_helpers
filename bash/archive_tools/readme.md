@@ -1,13 +1,18 @@
 # Archive tools
 
-1. archive_dl.sh
+## archive_dl.sh
 
 This tool downloads all files (except auto generated files by archive.org) and retains the folder structure
 
 -   how to use
-    `./archive_dl.sh "url"`
 
-2. waybackmashine.sh
+1.  `./archive_dl.sh "url"`
+2.  `./archive_dl.sh -f "filename"`  
+    please do not use a ./ before the name of the file and only use relative path
+3.  `./archive_dl.sh -u`  
+    downloads an up to date versions to the current directory
+
+## waybackmashine.sh
 
 This tool is here to donwload the html of the latest archive snapshot.
 Also can be used to download the latest snapshot of an archived file like website pictures.
@@ -16,7 +21,7 @@ Also can be used to download the latest snapshot of an archived file like websit
 
 `./waybackmashine.sh "url"`
 
-3. archviedtails.sh ( depricated)
+## archviedtails.sh ( depricated)
 
 This tool is getting all links from an archive org entry.
 Can be really useful if you want the entire thing.
