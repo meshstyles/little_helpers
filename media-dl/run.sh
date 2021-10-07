@@ -23,8 +23,7 @@ fi
 
 if [[ "${1}" =~ ^(https:\/\/www.netzkino.de|https:\/\/netzkino.de) ]];then
     
-    url=$(echo "${1}" | sed 's/https:\/\/www.netzkino.de\/\\#\\!\/filme\///' | sed 's/\///')
-    echo "$url yay"
+    url=$(echo "${1}" | sed 's/https:\/\/www.netzkino.de\/filme\///' | sed 's/\///')
     urlp2=$(curl "https://api.netzkino.de.simplecache.net/capi-2.0a/movies/${url}" | jq -r '.custom_fields.Streaming[0]')
     wget -c "https://pmd.netzkino-seite.netzkino.de/$urlp2.mp4"
     exit 1;
