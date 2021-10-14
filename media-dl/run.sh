@@ -43,12 +43,6 @@ if [[ "${1}" =~ ^(https:\/\/www.netzkino.de|https:\/\/netzkino.de) ]];then
     exit;
 fi 
 
-# if [["${1}" =~ ^(https:\/\/www.joyn.de\/serien\/|https:\/\/joyn.de\/serien\/)]]; then
-#     echo "Attention this will only download the preselected season since this pup is non interactive with websites"
-#     curl "${1}" | pup 'div.fcxvn8-6 div div a attr{href}' | grep "serien" | sed 's|/serien/|https://www.joyn.de/serien/|g'
-#     video_links="filled"
-# fi
-
 echo looper
 
 [[ video_links -eq "filled" ]] && file_variable="${listFile}"
