@@ -39,8 +39,12 @@ if [[ "${1}" =~ ^(https:\/\/www.netzkino.de|https:\/\/netzkino.de) ]];then
         -H 'Referer: https://www.netzkino.de/' \
         -H 'Accept-Language: de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7,zh-CN;q=0.6,zh;q=0.5' \
         --compressed | jq -r '.data.movieBySlug.nodes[0].videoSource.pmdUrl')
-    wget -c "https://pmd.netzkino-seite.netzkino.de/$pmdext"
-    exit;
+    if [[ "$pmdext" == "null"* ]];then 
+        echo "the link could not be retrieved"
+        exit 1
+    fi
+    wget -c "https://pmd.netzkino-seite.netzkino.de/$pmdext" || exit 1
+    exit 0
 fi 
 
 echo looper
