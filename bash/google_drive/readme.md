@@ -5,7 +5,7 @@ this downloader can download all files in a publically available google drive fo
 ## how to use
 
 ```
-wget https://raw.githubusercontent.com/meshstyles/little_helpers/master/google_drive/gdrive-dl.sh
+https://raw.githubusercontent.com/meshstyles/little_helpers/master/bash/google_drive/gdrive-dl.sh
 chmod +x gdrive-dl.sh
 ./gdrive-dl.sh "https://drive.google.com/drive/folders/somerandomid"
 ```
