@@ -28,7 +28,9 @@ chmod +x gdrive-dl.sh
 
 ## knows issues
 
-1. files that include any of the ways google denotes own files there will be an issue with the down.
+1. missing downloading sub-folder and individual file support which is going to need to wait for a bit
+
+2. files that include any of the ways google denotes own files there will be an issue with the down.
 
 ```
  Google Drive Folder
@@ -42,4 +44,4 @@ chmod +x gdrive-dl.sh
  Google Jamboard
 ```
 
-2. some types like google site, google my maps and google forms can't be downloaded because they lack a download option the links will be stored in a file
+3. some types like google site, google my maps and google forms can't be downloaded because they lack a download option the links will be stored in a file
