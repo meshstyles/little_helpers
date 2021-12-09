@@ -5,7 +5,8 @@ We than go throught the image and post data that is associated with it and downl
 We mark down the failing images with post link to make possible manual search with archival sites to find delted content.
 
 # Dependencies
-- pup
+- pup (run.sh only)
+- jq (direct_tweet_scraper.sh)
 - curl and other linux stuff you already should have
 
 # usage
