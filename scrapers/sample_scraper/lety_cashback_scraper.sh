@@ -18,7 +18,7 @@ teaser_percentage=$(echo "$page" | pup 'span.b-shop-teaser__cash text{}' | sed '
 echo "$page" > index.html
 
 
-echo "$min_max_cashback - $teaser_percentage"
+echo "$min_max_cashback - $teaser_percentage"   
 if [[ "$min_max_cashback" == "" ]]; then
     echo "$min_max_cashback"
     discord.sh \
