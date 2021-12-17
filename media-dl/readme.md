@@ -1,6 +1,8 @@
-# Media-DL
+# Media-DL (DEPRECATED)
 
 This shellscript is supposed to make usage of Youtube-DL easier and more efficient.
+
+NOTE: this script has now been archived/deprecated in favor for (bash_downloaders)[https://github.com/meshstyles/bash_downloaders]
 
 ## Dependencies
 
@@ -15,8 +17,7 @@ This shellscript is supposed to make usage of Youtube-DL easier and more efficie
 -   tubitv \*
 -   netzkino
 
-\* partially so just the default selected season will be downloaded  
-
+\* partially so just the default selected season will be downloaded
 
 ## How to use
 
