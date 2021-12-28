@@ -2,6 +2,8 @@
 
 this downloader can download all files in a publically available google drive folder
 
+## NOTE: this seems to be broken for large files (> 200mb) for the time being
+
 ## how to use
 
 ```
